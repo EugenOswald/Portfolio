@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 50px;
+
+  img {
+    padding-left: 100px;
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  div {
+    padding-right: 100px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 120%;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #57e8a2;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
