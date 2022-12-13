@@ -15,21 +15,23 @@ header {
     height: 100%;
     cursor: pointer;
   }
+}
 
-  div {
-    padding-right: 100px;
-  }
+.navbar {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
   a {
+    white-space: nowrap;
     text-decoration: none;
     font-size: 23px;
-    line-height: 120%;
-    padding-left: 50px;
-    padding-right: 50px;
     color: #57e8a2;
-    transition: all 125ms ease-in-out;
+    flex: 1;
+    transition: 115ms ease-in-out;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      font-weight: 600;
     }
   }
 }
