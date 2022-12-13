@@ -85,3 +85,20 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
     border-top-right-radius: 6px;
   }
 }
+
+.startpage-icons{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  bottom: 130px;
+  a{
+    flex: 1;
+    margin-top: 10px;
+    transition: 115ms ease-in-out;
+
+    &:hover{
+      transform: translateX(-5px) scale(1.05);
+    }
+  }
+}

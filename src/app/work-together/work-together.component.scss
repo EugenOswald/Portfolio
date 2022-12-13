@@ -1,0 +1,74 @@
+$Montserrat: "Montserrat", Arial, Helvetica, sans-serif;
+$Baloo: "Baloo", Arial, Helvetica, sans-serif;
+
+.work-together-bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+.work-togehter-sort {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-me-headline {
+  width: 668px;
+  h2 {
+    font-family: $Baloo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 121px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #57e8a2;
+    padding-bottom: 90px;
+  }
+}
+
+.about-me-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 571px;
+
+  span {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: #000000;
+  }
+  button {
+    margin-top: 40px;
+    width: 254px;
+    height: 58px;
+    border: 2px solid #57e8a2;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: #57e8a2;
+    cursor: pointer;
+    transition: background 225ms ease-in-out;
+    background: {
+      image: linear-gradient(135deg, #57e8a2 50%, transparent 50%);
+      position: 100%;
+      size: 400%;
+    }
+
+    &:hover {
+      background-position: 0;
+
+      color: white;
+      transform: scale(1.05);
+    }
+  }
+}
