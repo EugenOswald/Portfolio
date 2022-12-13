@@ -12,6 +12,26 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  display: inline-block;
   overflow-x: hidden;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #57e8a2 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #57e8a2;
+  border-radius: 0px;
+  border: 3px solid #ffffff;
 }

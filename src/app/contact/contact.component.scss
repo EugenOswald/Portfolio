@@ -1,0 +1,13 @@
+.contact-bg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../../assets/img/background/contact-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
