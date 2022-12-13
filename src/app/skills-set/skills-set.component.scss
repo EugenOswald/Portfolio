@@ -1,0 +1,42 @@
+$Montserrat: "Montserrat", Arial, Helvetica, sans-serif;
+$Baloo: "Baloo", Arial, Helvetica, sans-serif;
+
+.skill-set-bg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  background-image: url(../../assets/img/background/bg-skill-set.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+
+  .skill-set-groupe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1300px;
+  }
+
+  h2 {
+    font-family: $Baloo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+}
+
+.all-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

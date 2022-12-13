@@ -66,9 +66,9 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
     &:hover {
       background-position: 0;
-
       color: white;
       transform: scale(1.05);
+      filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.15));
     }
   }
 }

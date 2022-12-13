@@ -3,11 +3,10 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
 .startpage-bg {
   position: relative;
-  width: 100vw;
   min-height: 100vh;
   max-width: 100%;
   background-image: url("../../assets/img/background/hero-bg.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -86,18 +85,18 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   }
 }
 
-.startpage-icons{
+.startpage-icons {
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 40px;
   bottom: 130px;
-  a{
+  a {
     flex: 1;
     margin-top: 10px;
     transition: 115ms ease-in-out;
 
-    &:hover{
+    &:hover {
       transform: translateX(-5px) scale(1.05);
     }
   }
