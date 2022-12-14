@@ -1,6 +1,6 @@
-<form (ngSubmit)="onSubmit()">
-    <input required placeholder="Your name" type="text" name="username" [(ngModel)]="username">
-    <input required placeholder="Your email" type="email" name="username" [(ngModel)]="useremail">
-    <input required placeholder="Your message" type="text" name="username" [(ngModel)]="usermessage">
-    <button>Say hello</button>
+<form class="contact-form" (ngSubmit)="sendMail()" ngNativeValidate #myForm>
+    <input required name="name" placeholder="Your name" type="text" #nameField>
+    <input required name='email' placeholder="Your email" type="email" #emailField>
+    <textarea required name="message" placeholder="Your message" type="text" #messageField></textarea>
+    <button #sendButton>Say hello</button>
 </form>

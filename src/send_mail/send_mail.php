@@ -2,17 +2,17 @@
 
 ########### CONFIG ###############
 
-$recipient = 'your@mail.com';
+$recipient = 'oswaldeugen95@gmail.com';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
 
 
 
-########### Intruction ###########   
+########### Intruction ###########
 #
 #   This script has been created to send an email to the $recipient
-#   
+#
 #  1) Upload this file to your FTP Server
 #  2) Send a POST rewquest to this file, including
 #     [name] The name of the sender (Absender)
@@ -32,18 +32,15 @@ $redirect = 'success.html';
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: POST");
         header("Access-Control-Allow-Headers: content-type");
         exit;
     case ("POST"): //Send the email;
-        header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
         $headers = "From:  noreply@developerakademie.com";
 
         mail($recipient, $subject, $_POST['message'], $headers);
-        header("Location: " . $redirect); 
+        header("Location: " . $redirect);
 
         break;
     default: //Reject any non POST or OPTIONS requests.

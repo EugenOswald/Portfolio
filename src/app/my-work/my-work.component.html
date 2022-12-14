@@ -1,1 +1,10 @@
-<div></div>
+<div class="my-work-bg">
+    <div class="my-work-headline">
+        <h2>My work</h2>
+        <span>This page is a sample pf my work - please feel free to try them out</span>
+    </div>
+    <div class="skill-groupe" *ngFor="let index of [0,1,2]">
+        <img src="/assets/img/skill-icons/skill-icons-{{index}}.png" alt="">
+        <span class="skill-name" [innerHTML]="skills[index]"></span>
+    </div>
+</div>
