@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollButtonComponent } from './scroll-button/scroll-button.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AllSkillsComponent,
     ContactFormComponent,
     AllWorksComponent,
+    ScrollButtonComponent,
   ],
   imports: [
     BrowserModule,

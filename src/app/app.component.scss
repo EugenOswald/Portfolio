@@ -1,0 +1,12 @@
+.fixed {
+    left: 100px;
+    bottom: 100px;
+    width: 100px;
+    height: auto;
+  position: fixed;
+  z-index: 100;
+}
+
+.relative {
+  position: relative;
+}

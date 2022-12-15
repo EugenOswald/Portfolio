@@ -1,13 +1,59 @@
+$Montserrat: "Montserrat", Arial, Helvetica, sans-serif;
+$Baloo: "Baloo", Arial, Helvetica, sans-serif;
+
 .contact-bg {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
   position: relative;
   width: 100vw;
-  height: 100vh;
   max-width: 100%;
   background-image: url(../../assets/img/background/contact-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.contact-organize {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  h2 {
+    font-family: $Baloo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 120%;
+    color: #57e8a2;
+  }
+
+  h3 {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #57e8a2;
+  }
+
+  span {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+  }
+
+  a{
+    font-weight: 700;
+    color: #57e8a2 !important;
+    
+  }
+}
+
+.green {
+  font-weight: 700;
+  color: #57e8a2 !important;
 }
