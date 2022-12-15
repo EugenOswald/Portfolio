@@ -1,6 +1,5 @@
 <div [ngClass]="{'skill-style-1': index % 2 === 0, 'skill-style-2': index % 2 === 1}" *ngFor="let index of [0,1,2,3]">
    <a href="{{skillLinks[index]}}" target="_blank"><img src="/assets/img/my-skills/my-work-{{index}}.png" ng-mouseover="showClickMe = true" ng-show="showClickMe"></a>
-
     <div [ngClass]="{'description-1': index % 2 === 0, 'description-2': index % 2 === 1}">
         <h3 [innerHTML]="skillName[index]"></h3>
         <h5 [innerHTML]="skillSet[index]"></h5>
