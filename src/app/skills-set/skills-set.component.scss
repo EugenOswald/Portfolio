@@ -8,12 +8,13 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   flex-direction: column;
   position: relative;
   width: 100vw;
-  height: 100%;
   max-width: 100%;
   background-image: url(../../assets/img/background/bg-skill-set.png);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 70px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
 
   .skill-set-groupe {
     display: flex;

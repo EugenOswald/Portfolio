@@ -5,8 +5,10 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
   width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .my-work-headline {

@@ -11,7 +11,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { AllSkillsComponent } from './all-skills/all-skills.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
-
+import { AllWorksComponent } from './all-works/all-works.component';
+import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,13 +29,18 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ContactComponent,
     AllSkillsComponent,
     ContactFormComponent,
+    AllWorksComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-   
+    CommonModule,
+    MatIconModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })
