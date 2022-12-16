@@ -1,3 +1,26 @@
 {
-	"About me": "About me"
+	"Your message was sent": "Your message was sent",
+	"Say hello": "Say hello",
+	"Contact": "Contact",
+	"Got a problem to solve?": "Got a problem to solve?",
+	"Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.": "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.",
+	"Need a Fullstack developer?": "Need a Fullstack developer?",
+	"Impressum": "Impressum",
+	"Data protection": "Data protection",
+	"About me": "About me",
+	"My work": "My work",
+	"This page is a sample pf my work - please feel free to try them out": "This page is a sample pf my work - please feel free to try them out",
+	"Skill set": "Skill set",
+	"Hello! I am Eugen": "Hallo! Ich bin Eugen",
+	"FRONTEND": "FRONTEND",
+	"DEVELOPER": "DEVELOPER",
+	"SCROLL": "SCROLL",
+	"Let's work together": "Let's work together",
+	"I am a Front-end developer based in Wiesbaden, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.": "I am a Front-end developer based in Wiesbaden, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
+	"If you think I’d be a good match for your projects, contact me!": "If you think I’d be a good match for your projects, contact me!",
+	"Send a message": "Send a message",
+	"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+	"Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+	"Based on the PokéAPI a simple library that provides and catalogues pokemon information.": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+	"Ring of Fire is a party game in which participants must draw cards and perform actions.": "Ring of Fire ist ein Partyspiel, bei dem die Teilnehmer Karten ziehen und Aktionen ausführen müssen."
 }
