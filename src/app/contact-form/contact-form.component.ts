@@ -12,7 +12,8 @@ export class ContactFormComponent implements OnInit {
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
-
+  messageSent: boolean = false;
+  spinnerSent: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
@@ -22,28 +23,30 @@ export class ContactFormComponent implements OnInit {
     // Animation anzeigen
     let fd = new FormData(); // hier werden alle Daten vorbereitet
     fd.append('name', this.nameField.nativeElement.value);
-    fd.append('email', this.emailField.nativeElement.value);
     fd.append('message', this.messageField.nativeElement.value);
     // senden
-    await fetch(
-      'http://students.developerakademie.com/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd,
-      }
-    );
+    await fetch('https://eugen-oswald.de/send_mail/send_mail.php', {
+      method: 'POST',
+      body: fd,
+    });
 
     //text anzeigen: Nachricht gesendet.
     setTimeout(() => {
       this.enabled();
-    }, 1000);
+    }, 2000);
+
+    setTimeout(() => {
+      this.messageSent = false;
+    }, 5000);
   }
 
   disabled() {
     this.nameField.nativeElement.disabled = true;
     this.emailField.nativeElement.disabled = true;
     this.messageField.nativeElement.disabled = true;
-    this.sendButton.nativeElement.disabled = true;
+    this.sendButton.nativeElement.hidden = true;
+    this.messageSent = true;
+    this.spinnerSent = true;
     this.nameField.nativeElement.value = '';
     this.emailField.nativeElement.value = '';
     this.messageField.nativeElement.value = '';
@@ -53,6 +56,7 @@ export class ContactFormComponent implements OnInit {
     this.nameField.nativeElement.disabled = false;
     this.emailField.nativeElement.disabled = false;
     this.messageField.nativeElement.disabled = false;
-    this.sendButton.nativeElement.disabled = false;
+    this.sendButton.nativeElement.hidden = false;
+    this.spinnerSent = false;
   }
 }

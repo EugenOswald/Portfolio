@@ -59,7 +59,26 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
       color: white;
       transform: scale(1.05);
     }
+
+
   }
 
-  
+  .uploader-status {
+    margin-top: 40px;
+  }
+
+  .uploader-status ::ng-deep .mat-progress-spinner circle,
+  .mat-spinner circle {
+    stroke: #57e8a2;
+  }
+
+  .message-sent {
+      font-family: $Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #57e8a2;
+      margin-bottom: 20px;
+    }
 }
