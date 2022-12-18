@@ -18,9 +18,11 @@ header {
 }
 
 .navbar {
+  margin-right: 50px;
   width: 600px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   a {
     text-align: center;
     white-space: nowrap;
@@ -54,4 +56,8 @@ header {
     margin-right: 5px;
     cursor: pointer;
   }
+}
+
+@media (min-width: 1500px) {
+
 }

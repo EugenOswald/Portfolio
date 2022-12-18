@@ -13,7 +13,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 .contact-organize {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 120px;
@@ -49,11 +49,15 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   a{
     font-weight: 700;
     color: #57e8a2 !important;
-    
+
   }
 }
 
 .green {
   font-weight: 700;
   color: #57e8a2 !important;
+}
+
+.contact-text{
+  width: 600px;
 }

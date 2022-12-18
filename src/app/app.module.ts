@@ -21,6 +21,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { RespHeaderMenuComponent } from './resp-header-menu/resp-header-menu.component';
 
 
 // AoT requires an exported function for factories
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactFormComponent,
     AllWorksComponent,
     ScrollButtonComponent,
+    RespHeaderMenuComponent,
   ],
   imports: [
     BrowserModule,
