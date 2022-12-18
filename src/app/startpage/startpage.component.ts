@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./startpage.component.scss'],
 })
 export class StartpageComponent implements OnInit {
-  openMenu:boolean = false;
+  
 
   constructor() {}
 

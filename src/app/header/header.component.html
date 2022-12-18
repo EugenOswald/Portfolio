@@ -1,13 +1,18 @@
 <header>
-  <img src="/assets/img/icons/EO-white.png" alt="" srcset="">
+  <div class="header-1">
+    <img class="logo-icon" src="/assets/img/icons/EO-white.png" alt="" srcset="">
 
-  <nav class="navbar">
-    <a translate href="#aboutMe">About me</a>
-    <a translate href="#skillsSet">Skills set</a>
-    <a translate href="#myWork">My work</a>
-    <div class="separator-language"><a (click)="translate.use('de')">DE</a> <div class="separator"></div>
-      <a (click)="translate.use('en')">EN</a>
-    </div>
+    <nav class="navbar">
+      <a translate href="#aboutMe">About me</a>
+      <a translate href="#skillsSet">Skills set</a>
+      <a translate href="#myWork">My work</a>
+      <div class="separator-language"><a (click)="translate.use('de')">DE</a>
+        <div class="separator"></div>
+        <a (click)="translate.use('en')">EN</a>
+      </div>
 
-  </nav>
+    </nav>
+    <app-resp-header-menu class="second-navbar"></app-resp-header-menu>
+  </div>
+
 </header>

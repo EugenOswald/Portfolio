@@ -8,6 +8,15 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class RespHeaderMenuComponent implements OnInit {
   constructor(@Inject(TranslateService) public translate: TranslateService) {}
+  openMenu: boolean = false;
 
   ngOnInit(): void {}
+
+  openBurgerMenu() {
+    this.openMenu = true;
+  }
+
+  closeBurgerMenu() {
+     this.openMenu = false;
+  }
 }

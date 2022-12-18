@@ -10,4 +10,5 @@ export class HeaderComponent implements OnInit {
   constructor(@Inject(TranslateService) public translate: TranslateService) {}
 
   ngOnInit(): void {}
+
 }

@@ -1,13 +1,17 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   z-index: 2;
   left: 0;
   right: 0;
   top: 0;
-  margin-top: 50px;
+
+  .header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+  }
 
   img {
     padding-left: 100px;
@@ -51,13 +55,43 @@ header {
   align-items: center;
   margin-left: 10px;
   margin-right: 40px;
-  a{
+  a {
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
   }
 }
 
-@media (min-width: 1500px) {
+.second-navbar {
+  display: none;
+}
 
+@media (max-width: 1300px) {
+  .navbar {
+    display: none;
+  }
+
+  .second-navbar {
+    display: flex;
+    margin-right: 50px;
+    img {
+      width: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    img {
+      padding-left: 50px;
+      width: 70px;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .second-navbar {
+    display: flex;
+    margin-right: 50px;
+  }
 }

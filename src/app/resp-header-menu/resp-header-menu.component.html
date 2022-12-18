@@ -1,6 +1,15 @@
-<header>
-  <img src="/assets/img/icons/EO-white.png" alt="" srcset="">
+<div *ngIf="!openMenu">
+  <nav class="second-navbar">
+    <img (click)="openBurgerMenu()" src="/assets/img/icons/burger-menu.png" alt="">
+  </nav>
+</div>
 
+<div *ngIf="openMenu" class="headerBG-second">
+  <div>
+
+    <img class="logo-icon" src="/assets/img/icons/EO-white.png" alt="" srcset="">
+    <img (click)="closeBurgerMenu()" src="/assets/img/icons/burger-menu.png" alt="">
+  </div>
   <nav class="navbar">
     <a translate href="#aboutMe">About me</a>
     <a translate href="#skillsSet">Skills set</a>
@@ -9,6 +18,5 @@
       <div class="separator"></div>
       <a (click)="translate.use('en')">EN</a>
     </div>
-
   </nav>
-</header>
+</div>
