@@ -14,6 +14,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   align-items: center;
   width: 100%;
   justify-content: space-around;
+  padding: 120px;
 }
 
 .about-me-headline {
@@ -100,7 +101,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
 @media screen and (max-width: 1050px) {
   .about-me-headline {
-    margin-left: 40px;
+    padding-left: 60px;
     width: 500px;
     h2 {
       font-size: 70px;
@@ -109,7 +110,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
   .about-me-text {
     width: 500px;
-
+    padding-right: 60px;
     span {
       font-size: 16px;
     }
@@ -130,6 +131,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   .about-me-headline {
     width: 500px;
     margin-left: 0px;
+    padding-left: 0px;
     h2 {
       font-size: 70px;
       padding-bottom: 0px;
@@ -138,7 +140,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
   .about-me-text {
     width: 500px;
-
+    padding-right: 0px;
     span {
       font-size: 16px;
     }
@@ -166,7 +168,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   }
 
   .about-me-text {
-     width: 360px;
+    width: 360px;
 
     span {
       font-size: 16px;

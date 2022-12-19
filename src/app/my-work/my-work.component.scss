@@ -12,8 +12,12 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 }
 
 .my-work-headline {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  padding-left: 170px;
   h2 {
-    margin-left: 100px;
     font-family: $Baloo;
     font-style: normal;
     font-weight: 400;
@@ -24,12 +28,56 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   }
 
   span {
-    margin-left: 100px;
     font-family: $Montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
     color: #000000;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .my-work-headline {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .my-work-headline {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+    padding-left: 120px;
+    h2 {
+      font-size: 70px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .my-work-headline {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    h2 {
+      font-size: 50px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      width: 280px;
+    }
   }
 }
