@@ -8,13 +8,11 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   flex-direction: column;
   position: relative;
   width: 100vw;
-  max-width: 100%;
   background-image: url(../../assets/img/background/bg-skill-set.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 50px;
   padding-top: 50px;
-
 
   .skill-set-groupe {
     display: flex;
@@ -40,4 +38,40 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1400px) {
+  .skill-set-bg {
+    h2 {
+      font-size: 96px;
+    }
+  }
+  .all-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .skill-set-bg {
+    h2 {
+      font-size: 70px;
+    }
+  }
+  .all-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 560px) {
+   .skill-set-bg {
+    h2 {
+      font-size: 50px;
+    }
+  }
 }

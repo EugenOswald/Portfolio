@@ -4,7 +4,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 .work-together-bg {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 60vh;
   position: relative;
 }
@@ -12,6 +12,8 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .about-me-headline {
@@ -70,6 +72,109 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
       color: white;
       transform: scale(1.05);
       filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.15));
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .about-me-headline {
+    margin-left: 20px;
+    width: 500px;
+    h2 {
+      font-size: 100px;
+    }
+  }
+
+  .about-me-text {
+    width: 500px;
+
+    span {
+      font-size: 20px;
+    }
+    button {
+      width: 200px;
+      height: 58px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about-me-headline {
+    margin-left: 40px;
+    width: 500px;
+    h2 {
+      font-size: 70px;
+    }
+  }
+
+  .about-me-text {
+    width: 500px;
+
+    span {
+      font-size: 16px;
+    }
+    button {
+      width: 200px;
+      height: 58px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .work-togehter-sort {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-me-headline {
+    width: 500px;
+    margin-left: 0px;
+    h2 {
+      font-size: 70px;
+      padding-bottom: 0px;
+    }
+  }
+
+  .about-me-text {
+    width: 500px;
+
+    span {
+      font-size: 16px;
+    }
+    button {
+      width: 200px;
+      height: 58px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .work-togehter-sort {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-me-headline {
+    width: 360px;
+    margin-left: 0px;
+    h2 {
+      font-size: 50px;
+      padding-bottom: 0px;
+    }
+  }
+
+  .about-me-text {
+     width: 360px;
+
+    span {
+      font-size: 16px;
+    }
+    button {
+      width: 200px;
+      height: 58px;
+      font-size: 16px;
     }
   }
 }
