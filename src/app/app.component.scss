@@ -10,3 +10,18 @@
 .relative {
   position: relative;
 }
+
+@media screen and (max-width: 1000px){
+.fixed {
+    left: 50px;
+    bottom: 100px;
+}
+}
+
+
+@media screen and (max-width: 500px){
+.fixed {
+    left: 25px;
+    bottom: 100px;
+}
+}

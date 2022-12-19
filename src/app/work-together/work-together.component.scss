@@ -14,7 +14,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   align-items: center;
   width: 100%;
   justify-content: space-around;
-  padding: 120px;
+  margin: 120px;
 }
 
 .about-me-headline {
@@ -153,13 +153,17 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 560px) {
+
+  .work-together-bg{
+    height: 600px;
+  }
   .work-togehter-sort {
     flex-direction: column;
     justify-content: center;
   }
 
   .about-me-headline {
-    width: 360px;
+    width: 80vw;
     margin-left: 0px;
     h2 {
       font-size: 50px;
@@ -168,13 +172,45 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   }
 
   .about-me-text {
-    width: 360px;
+    width: 80vw;
 
     span {
       font-size: 16px;
     }
     button {
-      width: 200px;
+      width: 50vw;
+      height: 58px;
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .work-together-bg {
+    align-items: center;
+    height: 80vh;
+  }
+  .work-togehter-sort {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-me-headline {
+    width: 80vw;
+    margin-left: 0px;
+    h2 {
+      font-size: 50px;
+      padding-bottom: 0px;
+    }
+  }
+
+  .about-me-text {
+    width: 80vw;
+
+    span {
+      font-size: 16px;
+    }
+    button {
+      width: 50vw;
       height: 58px;
       font-size: 16px;
     }

@@ -110,7 +110,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
 @media screen and (max-width: 1500px) {
   .profile-picture-div {
-    max-width: 700px;
+    max-width: 50vw;
   }
 
   .greeting {
@@ -130,7 +130,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
 @media screen and (max-width: 1200px) {
   .profile-picture-div {
-    max-width: 600px;
+    max-width: 40vw;
   }
 
   .greeting {
@@ -206,7 +206,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 @media screen and (max-width: 500px) {
   .profile-picture-div {
     margin-top: 40px;
-    max-width: 360px;
+    max-width: 80vw;
   }
 
   .greeting {
@@ -228,7 +228,6 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 @media screen and (max-width: 380px) {
   .profile-picture-div {
     margin-top: 20px;
-    max-width: 260px;
   }
 
   .greeting {

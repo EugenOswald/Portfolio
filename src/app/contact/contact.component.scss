@@ -4,7 +4,6 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 .contact-bg {
   position: relative;
   width: 100vw;
-  max-width: 100%;
   background-image: url(../../assets/img/background/contact-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,8 +15,8 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   justify-content: space-between;
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 175px;
+  padding-right: 175px;
 
   h2 {
     font-family: $Baloo;
@@ -46,10 +45,9 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
     color: #000000;
   }
 
-  a{
+  a {
     font-weight: 700;
     color: #57e8a2 !important;
-
   }
 }
 
@@ -58,6 +56,95 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   color: #57e8a2 !important;
 }
 
-.contact-text{
+.contact-text {
   width: 600px;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-me-headline {
+    margin-left: 20px;
+    width: 500px;
+    h2 {
+      font-size: 100px;
+    }
+  }
+
+  .about-me-text {
+    width: 500px;
+
+    span {
+      font-size: 20px;
+    }
+    button {
+      width: 200px;
+      height: 58px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .contact-organize {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    h2 {
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-organize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    .contact-text {
+      width: 500px;
+      padding-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-organize {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    .contact-text {
+      max-width: 70vw;
+      padding-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+  }
 }

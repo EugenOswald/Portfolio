@@ -4,12 +4,11 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 .flex-row {
   display: flex;
   flex-direction: row;
-  a{
+  a {
     margin-top: 20px;
-   margin: 5px;
-   text-decoration: none;
+    margin: 5px;
+    text-decoration: none;
   }
-
 }
 
 .skill-style-1 {
@@ -265,4 +264,68 @@ button {
     height: 46px;
     font-size: 20px;
   }
+}
+
+@media screen and (max-width: 850px) {
+  .skill-style-1 {
+    margin-bottom: 20px;
+  }
+
+  .skill-style-2 {
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+  }
+  .description-1 {
+    align-items: center;
+    margin-left: 0px;
+    width: 80vw;
+    height: 255px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .description-2 {
+    align-items: center;
+    margin-right: 0px;
+    width: 80vw;
+    height: 255px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .live-test-button {
+    display: flex;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  img {
+    width: 80vw;
+    height: auto;
+  }
+
+  button {
+    width: 120px;
+    height: 46px;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+
+
 }

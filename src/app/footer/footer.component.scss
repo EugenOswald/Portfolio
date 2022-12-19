@@ -4,7 +4,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 .footer-bg {
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   background: radial-gradient(
     71.18% 335.57% at 28.82% -124.4%,
     #57e8a2 51.56%,
@@ -62,4 +62,40 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
       transform: translateY(-1px) scale(1.01);
     }
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer-icon {
+    img {
+      width: 80px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-center {
+    h3 {
+      font-size: 18px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .footer-social {
+    a {
+      padding-left: 10px;
+      padding-right: 10px;
+      transition: 115ms ease-in-out;
+    }
+    img {
+      &:hover {
+        transform: translateY(-1px) scale(1.01);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
