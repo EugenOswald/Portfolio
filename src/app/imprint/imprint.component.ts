@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImprintComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    window.scrollTo(0, 0);
+
+  }
 
   ngOnInit(): void {
   }

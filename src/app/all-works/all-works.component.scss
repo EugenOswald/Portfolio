@@ -326,6 +326,10 @@ button {
 
 
 @media screen and (max-width: 340px) {
-
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
 
 }

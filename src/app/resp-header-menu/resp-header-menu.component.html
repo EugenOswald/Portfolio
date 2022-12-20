@@ -5,16 +5,17 @@
 </div>
 
 <div *ngIf="openMenu" class="headerBG-second">
-  <div>
+  <div class="open-menu-icon">
 
     <img class="logo-icon" src="/assets/img/icons/EO-white.png" alt="" srcset="">
     <img (click)="closeBurgerMenu()" src="/assets/img/icons/burger-menu.png" alt="">
   </div>
   <nav class="navbar">
-    <a translate href="#aboutMe">About me</a>
-    <a translate href="#skillsSet">Skills set</a>
-    <a translate href="#myWork">My work</a>
-    <div class="separator-language"><a (click)="translate.use('de')">DE</a>
+    <a (click)="closeBurgerMenu()" translate href="#aboutMe">About me</a>
+    <a (click)="closeBurgerMenu()" translate href="#skillsSet">Skills set</a>
+    <a (click)="closeBurgerMenu()" translate href="#myWork">My work</a>
+    <div class="separator-language">
+      <a (click)="translate.use('de')">DE</a>
       <div class="separator"></div>
       <a (click)="translate.use('en')">EN</a>
     </div>
