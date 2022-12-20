@@ -22,6 +22,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { RespHeaderMenuComponent } from './resp-header-menu/resp-header-menu.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { AppRoutingModule } from './app-routing.module';
+import { OnePagerComponent } from './one-pager/one-pager.component';
+import { ImprintHeaderComponent } from './imprint-header/imprint-header.component';
+
 
 
 // AoT requires an exported function for factories
@@ -44,6 +49,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     AllWorksComponent,
     ScrollButtonComponent,
     RespHeaderMenuComponent,
+    ImprintComponent,
+    OnePagerComponent,
+    ImprintHeaderComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -63,6 +72,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    AppRoutingModule,
   ],
 
   providers: [],

@@ -24,8 +24,9 @@ export class ContactFormComponent implements OnInit {
     let fd = new FormData(); // hier werden alle Daten vorbereitet
     fd.append('name', this.nameField.nativeElement.value);
     fd.append('message', this.messageField.nativeElement.value);
+    fd.append('email', this.emailField.nativeElement.value);
     // senden
-    await fetch('https://eugen-oswald.de/send_mail/send_mail.php', {
+    await fetch('https://eugen-oswald.de/send_mail/send_mail.php' , {
       method: 'POST',
       body: fd,
     });
