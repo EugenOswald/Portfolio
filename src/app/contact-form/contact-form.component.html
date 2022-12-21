@@ -1,8 +1,8 @@
 <form class="contact-form" (ngSubmit)="sendMail()" ngNativeValidate #myForm>
   <span translate class="message-sent" *ngIf="messageSent" #span>Your message was sent</span>
-  <input translate minlength="2" required name="name" placeholder="Your name" type="text" #nameField>
-  <input translate required name='email' placeholder="Your email" type="email" #emailField>
-  <textarea minlength="1" required name="message" placeholder="Your message" type="text" #messageField></textarea>
+  <input  translate [(ngModel)]="name" minlength="2" required name="name" placeholder="Your name" type="text" #nameField>
+  <input translate [(ngModel)]="email" required name='email' placeholder="Your email" type="email" #emailField>
+  <textarea [(ngModel)]="message" minlength="1" required name="message" placeholder="Your message" type="text" #messageField></textarea>
   <button translate #sendButton>Say hello</button>
   <div class="uploader-status"><mat-spinner [diameter]="40" *ngIf="spinnerSent"></mat-spinner></div>
 </form>

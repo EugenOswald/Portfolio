@@ -14,6 +14,9 @@ export class ContactFormComponent implements OnInit {
   @ViewChild('sendButton') sendButton!: ElementRef;
   messageSent: boolean = false;
   spinnerSent: boolean = false;
+  name: string = '';
+  email: string = '';
+  message: string = '';
   constructor() {}
 
   ngOnInit(): void {}
@@ -22,11 +25,11 @@ export class ContactFormComponent implements OnInit {
     this.disabled();
     // Animation anzeigen
     let fd = new FormData(); // hier werden alle Daten vorbereitet
-    fd.append('name', this.nameField.nativeElement.value);
-    fd.append('message', this.messageField.nativeElement.value);
-    fd.append('email', this.emailField.nativeElement.value);
+    fd.append('name', this.name);
+    fd.append('message', this.message);
+    fd.append('email', this.email);
     // senden
-    await fetch('https://eugen-oswald.de/send_mail/send_mail.php' , {
+    await fetch('https://eugen-oswald.de/send_mail.php', {
       method: 'POST',
       body: fd,
     });
