@@ -1,6 +1,11 @@
 $Montserrat: "Montserrat", Arial, Helvetica, sans-serif;
 $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
+.absolute {
+  position: absolute;
+}
+
+
 .my-work-bg {
   display: flex;
   flex-direction: column;
@@ -11,12 +16,14 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
   padding-bottom: 50px;
   padding-top: 50px;
   overflow-x: hidden;
+   overflow-y: hidden;
 }
 
 .my-work-headline {
   display: flex;
   flex-direction: column;
   text-align: left;
+  z-index: 2;
 
   padding-left: 170px;
   h2 {
@@ -82,4 +89,64 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
       width: 80vw;
     }
   }
+}
+
+/*****************Bubbles***************************/
+
+.bubble-0 {
+  width: 5vw;
+  height: auto;
+  z-index: 0;
+  top: 2vh;
+  right: 51vw;
+}
+.bubble-1 {
+  width: 10vw;
+  height: auto;
+  z-index: 0;
+  top: 25vh;
+  right: 2vw;
+}
+
+.bubble-2{
+  width: 30vw;
+  height: auto;
+  z-index: 0;
+  top: 60vh;
+  right: 90vw;
+}
+.bubble-3 {
+  width: 10vw;
+  height: auto;
+  z-index: 0;
+  top: 100vh;
+  right: 1vw;
+}
+.bubble-4 {
+  width: 5vw;
+  height: auto;
+  z-index: 0;
+  top: 150vh;
+  right: 80vw;
+}
+.bubble-5 {
+  width: 10vw;
+  height: auto;
+  z-index: 0;
+  top: 170vh;
+  right: 80vw;
+}
+.bubble-6 {
+  width: 10vw;
+  height: auto;
+  z-index: 0;
+  top: 220vh;
+  right: 85vw;
+}
+.bubble-7 {
+  width: 20vw;
+  height: auto;
+  z-index: 0;
+  top: 270vh;
+  right: 2vw;
 }

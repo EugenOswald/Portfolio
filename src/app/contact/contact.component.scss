@@ -1,6 +1,25 @@
 $Montserrat: "Montserrat", Arial, Helvetica, sans-serif;
 $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 
+.absolute {
+  position: absolute;
+}
+
+.bubble-0 {
+  width: 15vw;
+  height: auto;
+  z-index: 0;
+  top: 1vh;
+  right: 1vw;
+}
+.bubble-1 {
+  width: 10vw;
+  height: auto;
+  z-index: 0;
+  top: 60vh;
+  right: 70vw;
+}
+
 .contact-bg {
   position: relative;
   width: 100vw;
@@ -11,13 +30,15 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
 }
 
 .contact-organize {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 120px;
   padding-left: 175px;
   padding-right: 175px;
+  z-index: 2;
 
   h2 {
     font-family: $Baloo;
