@@ -1,7 +1,9 @@
 .fixed {
   left: 100px;
   bottom: 100px;
-  width: 100px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
   height: auto;
   position: fixed;
   z-index: 1;

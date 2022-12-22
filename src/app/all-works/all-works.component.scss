@@ -75,18 +75,46 @@ span {
   color: #000000;
 }
 
-img {
-  width: 620px;
-  height: auto;
+.a-class {
+  text-decoration: none;
+}
+
+.work-img {
+  width: 590px;
+  height: 320px;
   object-fit: cover;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: transform 225ms ease-in-out;
+
+  .live-test-span {
+    display: none;
+    font-family: $Baloo;
+    font-size: 50px;
+    text-decoration: none;
+    transition: display 225ms ease-in-out;
+    color: white;
+  }
 
   &:hover {
     transform: scale(1.05) translateY(-10px);
+    background-color: #57e8a2;
+
+    .live-test-span {
+      display: flex;
+      background-color: #57e8a2;
+      opacity: 0.9;
+      justify-content: center;
+      align-items: center;
+      width: 590px;
+      height: 320px;
+      display: flex;
+    }
   }
 }
+
 .live-test-button {
   display: none;
 }
@@ -152,9 +180,16 @@ button {
     font-size: 16px;
   }
 
-  img {
-    width: 470px;
-    height: auto;
+  .work-img {
+    width: 480px;
+    height: 250px;
+
+    &:hover {
+      .live-test-span {
+        width: 480px;
+        height: 250px;
+      }
+    }
   }
 
   button {
@@ -197,9 +232,16 @@ button {
     font-size: 16px;
   }
 
-  img {
+  .work-img {
     width: 360px;
-    height: auto;
+    height: 200px;
+
+    &:hover {
+      .live-test-span {
+        width: 360px;
+        height: 200px;
+      }
+    }
   }
 
   button {
@@ -254,9 +296,17 @@ button {
     font-size: 16px;
   }
 
-  img {
+  .work-img {
     width: 360px;
-    height: auto;
+    height: 200px;
+
+    &:hover {
+      .live-test-span {
+        display: none;
+        width: 360px;
+        height: 200px;
+      }
+    }
   }
 
   button {
@@ -312,9 +362,17 @@ button {
     font-size: 16px;
   }
 
-  img {
-    width: 80vw;
-    height: auto;
+  .work-img {
+    width: 400px;
+    height: 220px;
+    background-position: center;
+    &:hover {
+      .live-test-span {
+        display: none;
+        width: 360px;
+        height: 200px;
+      }
+    }
   }
 
   button {
@@ -324,12 +382,38 @@ button {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .work-img {
+    width: 300px;
+    height: 170px;
+    background-position: center;
+    &:hover {
+      .live-test-span {
+        display: none;
+        width: 360px;
+        height: 200px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 340px) {
-button {
+  button {
     width: 100px;
     height: 40px;
     font-size: 16px;
   }
 
+   .work-img {
+    width: 250px;
+    height: 140px;
+    background-position: center;
+    &:hover {
+      .live-test-span {
+        display: none;
+        width: 360px;
+        height: 200px;
+      }
+    }
+  }
 }
