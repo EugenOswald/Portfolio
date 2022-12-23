@@ -4,6 +4,8 @@ header {
   left: 0;
   right: 0;
   top: 0;
+}
+
 
   .header-1 {
     display: flex;
@@ -13,14 +15,16 @@ header {
     margin-top: 50px;
   }
 
-  img {
-    padding-left: 100px;
+  .logo-icon {
+    margin-left: 100px;
     width: 100px;
-    height: 100%;
+    height: 100px;
     cursor: pointer;
   }
-}
 
+.second-navbar{
+  display: none;
+}
 .navbar {
   margin-right: 50px;
   width: 600px;
@@ -62,36 +66,13 @@ header {
   }
 }
 
-.second-navbar {
-  display: none;
-}
+
 
 @media (max-width: 1300px) {
-  .navbar {
-    display: none;
+  .header-1{
+    display: none !important;
   }
-
   .second-navbar {
-    display: flex;
-    margin-right: 50px;
-    img {
-      width: 40px;
-    }
-  }
+  display: flex;
 }
-
-@media (max-width: 700px) {
-  header {
-    img {
-      padding-left: 50px;
-      width: 70px;
-      height: 100%;
-      cursor: pointer;
-    }
-  }
-
-  .second-navbar {
-    display: flex;
-    margin-right: 50px;
-  }
 }

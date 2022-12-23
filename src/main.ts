@@ -8,5 +8,14 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .catch((err) => console.error(err));
+
+let docTitle = document.title;
+window.addEventListener('blur', () => {
+  document.title = 'Come back :(';
+});
+window.addEventListener('focus', () => {
+  document.title = docTitle;
+});
