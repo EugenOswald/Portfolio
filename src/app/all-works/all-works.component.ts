@@ -12,7 +12,7 @@ export class AllWorksComponent implements OnInit {
     'https://join-kanban.eugen-oswald.de ',
     'https://pollo-loco.eugen-oswald.de ',
     'https://pokedex.eugen-oswald.de',
-    'https://ringoffire.eugen-oswald.de',
+    'https://ring-of-fire-67434.web.app',
   ];
 
   public skillGit: string[] = [
@@ -31,7 +31,7 @@ export class AllWorksComponent implements OnInit {
   public skillSet: string[] = [
     'JavaScript | CSS | HTML',
     'JavaScript | CSS | HTML',
-    'JavaScript | CSS | HTML | API',
+    'JavaScript | CSS | HTML | API |Bootstrap',
     'Angular | TypeScript | HTML | CSS | Firebase',
   ];
   public skillDescription: string[] = [
