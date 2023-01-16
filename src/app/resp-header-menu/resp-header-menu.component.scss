@@ -41,7 +41,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
       width: 50px;
       height: 50px;
       cursor: pointer;
-      transition: all 0.5s ease-in-out;
+      transition: all 250ms ease-in-out;
       margin-right: 50px;
       // border: 3px solid white;
 
@@ -51,7 +51,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
         background: #57e8a2;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        transition: all 0.5s ease-in-out;
+        transition: all 250ms ease-in-out;
       }
 
       .menu-btn_burger::before,
@@ -63,7 +63,7 @@ $Baloo: "Baloo", Arial, Helvetica, sans-serif;
         background: #57e8a2;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        transition: all 0.5s ease-in-out;
+        transition: all 250ms ease-in-out;
       }
 
       ::before {
