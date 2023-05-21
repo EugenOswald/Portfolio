@@ -18,7 +18,7 @@ export class AllWorksComponent implements OnInit {
   public skillGit: string[] = [
     'https://github.com/EugenOswald/Join-Kanban-Project',
     'https://github.com/EugenOswald/Pollp-Loco',
-    'https://github.com/EugenOswald/Pokedex',
+    'https://github.com/EugenOswald/pokedex-react',
     'https://github.com/EugenOswald/ringoffire',
   ];
 
@@ -31,7 +31,7 @@ export class AllWorksComponent implements OnInit {
   public skillSet: string[] = [
     'JavaScript | CSS | HTML',
     'JavaScript | CSS | HTML',
-    'JavaScript | CSS | HTML | API |Bootstrap',
+    'React | JavaScript | CSS | HTML | API | React-Bootstrap',
     'Angular | TypeScript | HTML | CSS | Firebase',
   ];
   public skillDescription: string[] = [
